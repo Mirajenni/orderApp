@@ -8,6 +8,9 @@
 *.so
 *.dylib
 
+# Ignore all in etc
+/etc/ 
+
 # Config files (could be yaml)
 *.json
 

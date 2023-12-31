@@ -8,6 +8,9 @@
 *.so
 *.dylib
 
+# Config files (could be yaml)
+*.json
+
 # Test binary, built with `go test -c`
 *.test
 

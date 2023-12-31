@@ -1,0 +1,12 @@
+{
+    "server": {
+        "port": "1323"
+    },
+    "database": {    
+        "dbhost": "localhost",
+        "dbname": "orderApp",
+        "dbport": "5432",
+        "dbpassword": "postgres",
+        "dbuser": "postgres"
+    }
+}

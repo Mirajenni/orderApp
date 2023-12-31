@@ -1,0 +1,25 @@
+ORDER APP   
+
+commands in cmd folder: 
+`go build main.go` to create executable
+`go mod tidy` to synchronize with folder
+
+
+- Create an postgres database with database name `orderApp`, with table: `product_dtos ()`
+```
+                                Table "public.product_dtos"
+   Column   |           Type           | Collation | Nullable |           Default
+------------+--------------------------+-----------+----------+------------------------------
+ id         | integer                  |           | not null | generated always as identity
+ name       | text                     |           |          |
+ price      | numeric                  |           | not null |
+ created_at | timestamp with time zone |           |          |
+ updated_at | timestamp with time zone |           |          |
+ deleted_at | timestamp with time zone |           |          |
+Indexes:
+    "product_dtos_pkey" PRIMARY KEY, btree (id)
+    "idx_product_dtos_deleted_at" btree (deleted_at)
+    "product_dtos_name_key" UNIQUE CONSTRAINT, btree (name)
+```
+
+#TODO: Generate docker file, ordinate folders and files, do routes and queries for update and delete
